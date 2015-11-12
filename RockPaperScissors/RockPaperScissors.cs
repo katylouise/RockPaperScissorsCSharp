@@ -19,6 +19,7 @@ namespace RockPaperScissors
 			rules.Add ("rock", "scissors");
 			rules.Add ("paper", "rock");
 			rules.Add ("scissors", "paper");
+
 			if (!rules.ContainsKey(choice1)) {
 				return "You didn't make a sensible choice!";
 			}

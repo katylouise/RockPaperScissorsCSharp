@@ -10,7 +10,8 @@ namespace RockPaperScissors
 			while (play) 
 			{
 				RockPaperScissors rps = new RockPaperScissors ();
-				
+
+				Console.WriteLine ("Welcome to RockPaperScissors!");
 				Console.WriteLine ("Make your choice: ");
 				string user_choice = Console.ReadLine ();
 				
@@ -23,6 +24,7 @@ namespace RockPaperScissors
 				string play_again = Console.ReadLine ();
 				if (play_again == "N") 
 				{
+					Console.WriteLine("Thanks for playing!");
 					play = false;
 				}
 			}
