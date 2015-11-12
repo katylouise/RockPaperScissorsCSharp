@@ -1,3 +1,3 @@
 # RockPaperScissors
 
-A simple version of Rock Paper Scissors written in C Sharp.  It is a game to be played against the computer in the terminal.  The game logic is tested using NUnit.
+A simple console version of the classic Rock Paper Scissors game written in C Sharp and tested using UNit.  A player can make their choice and play against a computer component as many times as they like!
