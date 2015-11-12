@@ -19,13 +19,22 @@ namespace RockPaperScissors
 			rules.Add ("rock", "scissors");
 			rules.Add ("paper", "rock");
 			rules.Add ("scissors", "paper");
-			if (rules [choice1] == choice2) {
+			if (!rules.ContainsKey(choice1)) {
+				return "You didn't make a sensible choice!";
+			}
+			else if (rules [choice1] == choice2) 
+			{
 				return "You win!";
-			} else if (rules [choice2] == choice1) {
+			} 
+			else if (rules [choice2] == choice1) 
+			{
 				return "You lose!";
-			} else {
+			} 
+			else
+			{
 				return "A draw!";
 			}
+
 		}
 
 	}

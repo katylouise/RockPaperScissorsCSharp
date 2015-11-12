@@ -76,5 +76,12 @@ namespace RockPaperScissors
 			string result = rps.Result ("scissors", "scissors");
 			Assert.AreEqual ("A draw!", result);
 		}
+
+		[Test ()]
+		public void Returns_Message_For_Non_RPS_Choice ()
+		{
+			string result = rps.Result ("pillow", "rock");
+			Assert.AreEqual ("You didn't make a sensible choice!", result);
+		}
 	}
 }
